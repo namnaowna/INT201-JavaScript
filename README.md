@@ -13,14 +13,13 @@ Array method
 * .pop() เก็บค่าตัวสุดท้ายของ array แล้ว return ตัวสุดท้ายใน array (ถ้า console.log ดู array ค่าตัวสุดท้ายนั้นจะหายไป)
 * .shift() เก็บค่าตัวแรกของ array แล้ว return ตัวแรกใน array (ถ้า console.log ดู array ค่าตัวแรกนั้นจะหายไป)
 * .unshift() เพิ่ม element ที่หน้า array return array เดิม แต่ new length
-* .splice() 
 * .slice() ใส่ได้ 2 parameter (indexstart,indexend-1) แต่ indexend สามารถเว้นได้ return new array ที่ copy มาจาก array ต้นฉบับ
 * .fill() เปลี่ยนทุก element ใน array แต่ถ้าอยากเปลี่ยนเฉพาะบางตัวต้องใช้ start index ช่วย
 * .reverse() return array ตัวเดิม
-* .include() มีทั้งใน string , array หาคำที
-* .splice() ทำให้ string เป็น array ได้
+* .include() มีทั้งใน string , array หาคำทีอยู่ใน element ต้องตรงทุกตัวอักษร
+* .splice() ทำให้ string เป็น array ได้ | ทำการเปลี่ยนแปลง array ตัวเก่า ไม่ได้สร้าง array ใหม่
 * .sort() เรียงลำดับ return array sort
-* .concat()
-* .flat()
+* .concat() ใช้สำหรับเชื่อมต่อสองอาเรย์เข้าด้วยกัน และส่งค่ากลับเป็นอาเรย์ใหม่ที่ได้รับการเชื่อมต่อแล้ว
+* .flat()  จะลบอาร์เรย์ซ้อนกันและทำให้สมาชิกอยู่ในอาร์เรย์เดียว 
 * .indexof() หา first index ที่ตรงกับเงื่อนไข สามารถเพิ่มเริ่มต้น index จากตำแหน่งไหนได้ return ค่า index ถ้าไม่เจอ -1 
 * .join() เปลี่ยน array เป็น string สามารถเพิ่มตัวคั่นได้
