@@ -14,7 +14,7 @@ Array method
 * .shift() เก็บค่าตัวแรกของ array แล้ว return ตัวแรกใน array (ถ้า console.log ดู array ค่าตัวแรกนั้นจะหายไป)
 * .unshift() เพิ่ม element ที่หน้า array return array เดิม แต่ new length
 * .splice() แก้ไขและเปลี่ยนแปลงอาร์เรย์ โดยลบหรือแทนที่สมาชิกในอาร์เรย์ หรือเพิ่มสมาชิกใหม่ลงในอาร์เรย์ โดยใช้การตัดตำแหน่งของสมาชิกในอาร์เรย์ตามดัชนี (index) | array.splice(start, deleteCount, item1, item2, ...); deleteCount 0 or negative = ไม่ลบ element
-* .slice() ใส่ได้ 2 parameter (indexstart,indexend-1) แต่ indexend สามารถเว้นได้ return new array ที่ copy มาจาก array ต้นฉบับ
+* .slice() เป็นการตัดแบ่งสัดส่วนใน array ใส่ได้ 2 parameter (indexstart,indexend-1) แต่ indexend สามารถเว้นได้ return new array ที่ copy มาจาก array ต้นฉบับ
 * .fill() เปลี่ยนทุก element ใน array แต่ถ้าอยากเปลี่ยนเฉพาะบางตัวต้องใช้ start index ช่วย | รับ 3 parameter (ค่าที่จะ replace,startindex,end(arrat.length))
 * .reverse() return array ตัวเดิม
 * .include() มีทั้งใน string , array หาคำทีอยู่ใน element ต้องตรงทุกตัวอักษร เป็น case sensitive
