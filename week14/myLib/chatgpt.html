@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Changer</title>
+    <style>
+      body {
+        transition: background-color 0.5s ease;
+      }
+      #colorPicker {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="colorPicker">กรุณาเลือกสีที่คุณชอบ:</label>
+    <input type="color" id="colorPicker" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var colorPicker = document.getElementById("colorPicker")
+
+        // ดึงค่าสีที่ถูกบันทึกไว้ใน local storage
+        var savedColor = localStorage.getItem("backgroundColor")
+
+        // ถ้ามีค่าสีที่ถูกบันทึกไว้ใน local storage ให้กำหนดเป็นสีพื้นหลังของ body
+        if (savedColor) {
+          document.body.style.backgroundColor = savedColor
+          colorPicker.value = savedColor
+        }
+
+        colorPicker.addEventListener("input", function () {
+          var selectedColor = colorPicker.value
+          document.body.style.backgroundColor = selectedColor
+
+          // บันทึกค่าสีที่ถูกเลือกลงใน local storage
+          localStorage.setItem("backgroundColor", selectedColor)
+        })
+      })
+    </script>
+  </body>
+</html>
