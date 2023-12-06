@@ -37,6 +37,9 @@ console.log(headElement.lastChild)
 console.log(headElement.parentElement)
 console.log(headElement.parentNode)
 
+console.log(document.documentElement.parentElement) // Returns null (<html> does not have a parent ELEMENT node)
+console.log(document.documentElement.parentNode) // Returns the Document node
+
 //previous sibling
 console.log(headElement.previousElementSibling)
 console.log(headElement.previousSibling)

@@ -18,6 +18,12 @@ CookieUtil.set("credit", "2", new Date(2024, 0, 1))
 console.log(CookieUtil.get("course name")) //INT201
 console.log(CookieUtil.get("credit")) //2
 
+CookieUtil.set("hobby", "reading", new Date("November 30, 2022"))
+alert(`CookieUtil.get("hobby")#1: ${CookieUtil.get("hobby")}`)
+
+CookieUtil.set("hobby", "shopping", new Date("December 10, 2022")) //overwrite and change an expiration date
+alert(`CookieUtil.get("hobby")#2: ${CookieUtil.get("hobby")}`) //shopping
+
 CookieUtil.unset("course name") //cookie expired
 
 // new Date(year, monthIndex, day)

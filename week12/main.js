@@ -18,16 +18,16 @@ Array.from(bodyChildren).forEach((bc) => {
 })
 
 console.log(body.firstChild) //#text
-console.log(body.firstElementChild)
-console.log(body.lastChild) //#text
-console.log(body.lastElementChild)
+console.log(body.firstElementChild) //<div id="bscit-courses" class="courses">
+console.log(body.lastChild) //<script src="main.js"></script>
+console.log(body.lastElementChild) //<script src="main.js"></script>
 
 console.log(body.firstChild === body.firstElementChild) //ใช้ reference address มาเปรียบเทียบ
 console.log(body.lastChild === body.lastElementChild) //ใช้ reference address มาเปรียบเทียบ
 
 console.log(document) //root node , document node
 console.log(document.documentElement) //html , root element , document element
-console.log(document.documentElement === document.firstElementChild) //html === <!DOCTYPE html> , true
+console.log(document.documentElement === document.firstElementChild) //html === <html lang="en"> , true
 console.log(document.documentElement === document) //html === root node , false
 
 // -- Query,Select element by id --
@@ -59,10 +59,15 @@ console.log(liEle2) //HTMLCollection
 const coursesEle = document.getElementsByClassName("courses")
 console.log(coursesEle) //HTMLCollection
 
-const divLectElement = document.querySelector('.lecturers')
+const divLectElement = document.querySelector(".lecturers")
 //get <li> under div.lecturers
-const liDivLect = divLectElement.querySelectorAll('li')
+const liDivLect = divLectElement.querySelectorAll("li")
 console.log(liDivLect)
 //get <li> under document node
-const allLi = document.querySelectorAll('li')
+const allLi = document.querySelectorAll("li")
 console.log(allLi)
+
+const nameNNEle = document.getElementsByName("NN")
+console.log(nameNNEle)
+
+console.log(body.childElementCount)
