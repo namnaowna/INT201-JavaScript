@@ -13,6 +13,8 @@ var c = 3
   let d = 4
   const e = 5
   var f = 6
+
+
   console.log("block area")
   console.log(a)
   console.log(b)
@@ -25,6 +27,7 @@ function doIt() {
   let h = 7
   const i = 8
   var j = 9
+
 
   console.log("function area")
   console.log(a)

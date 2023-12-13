@@ -74,5 +74,5 @@ console.log(aa)
 console.log(bb)
 console.log(cc)
 
-if (aa) console.log('aa') // aa = undifined
-else console.log('empty')
+if (aa) console.log("aa") // aa = undifined
+else console.log("empty")
